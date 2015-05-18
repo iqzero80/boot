@@ -34,6 +34,14 @@
     <build>
         <plugins>
             <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <warName>ROOT</warName>
+                    <outputDirectory>target/war/</outputDirectory>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
